@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ data.name }}{% endblock %}
+
+{% block content %}
+
+    <tbody>
+    <tr>
+        <th>Model</th>
+        <th>Screen</th>
+        <th>CPU</th>
+        <th>Memory</th>
+        <th>Price</th>
+        <th>Photo</th>
+    </tr>
+    {% for model in data.models %}
+        <tr>
+            {% include 'block.html' with elem=model %}
+
+        </tr>
+    {% endfor %}
+
+    </tbody>
+
+{% endblock %}
+
+

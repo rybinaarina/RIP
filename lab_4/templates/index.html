@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Computers</title>
+</head>
+<body>
+<h5># для этой страницы я не придумала тему..</h5>
+<h1>Here are some computer marks:</h1>
+<ul>
+    {% for var in data.names %}
+        <li>
+            <a href="detail-{{ var }}"> {{ var }}</a>
+        </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
