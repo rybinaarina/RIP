@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<table class="table_style">
+    {% block content %}{% endblock %}
+</table>
+<a href="javascript:history.back()" title="Вернуться на предыдущую страницу"> Back </a>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<td>{{ elem.name }}</td>
+<td>{{ elem.screen }}</td>
+<td>{{ elem.CPU }}</td>
+<td>{{ elem.memory }}</td>
+<td>{{ elem.price }}</td>
+<td>
+    {% load static %}
+    <img width=120 height=100 src={% static elem.photo %} alt=''/>
+</td>
+
